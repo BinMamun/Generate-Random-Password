@@ -81,3 +81,9 @@ body {
 .btn-img {
   height: 25px;
 }
+
+.copied {
+  display: none;
+  font-size: 18px;
+  color: #019f22;
+}

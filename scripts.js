@@ -33,9 +33,24 @@ document.querySelector(".js-copy").addEventListener("click", () => {
   copyPassword();
 })
 
-
+let timeOutId;
 function copyPassword() {
+
   randomPassword.select();
   navigator.clipboard.writeText(randomPassword.value);
+
+  showCopiedText(); //displays copied text
+
+  clearTimeout(timeOutId);
+  timeOutId = setTimeout(removeCopiedText, 2000); //removes copied text after 2s
 }
 
+function showCopiedText() {
+  const copiedText = document.querySelector(".js-copied-text");
+  copiedText.style.display = "block";
+}
+
+function removeCopiedText() {
+  const copiedText = document.querySelector(".js-copied-text");
+  copiedText.style.display = "none";
+}
