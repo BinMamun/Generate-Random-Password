@@ -4,3 +4,79 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+body {
+  background: #002233;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 200px auto 0;
+}
+
+.display {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.password-input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+  flex: 1;
+  transition: all 0.3s;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.container h1 span {
+  margin-left: 100px;
+  color: #019f44;
+  border-bottom: 4px solid #019f44;
+  padding-bottom: 6px;
+}
+
+.copy-img {
+  height: 30px;
+  cursor: pointer;
+}
+
+.generate-password-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  padding: 13px 15px;
+  background: #019f44;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.generate-password-btn:hover {
+  background: #007425;
+}
+
+.btn-img {
+  height: 25px;
+}
