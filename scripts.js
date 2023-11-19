@@ -28,3 +28,14 @@ function passordBox() {
 
   randomPassword.value = password;
 }
+
+document.querySelector(".js-copy").addEventListener("click", () => {
+  copyPassword();
+})
+
+
+function copyPassword() {
+  randomPassword.select();
+  navigator.clipboard.writeText(randomPassword.value);
+}
+
